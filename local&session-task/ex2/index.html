@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project Idea Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="project-form">
+        <h2>Project Idea Form</h2>
+
+        <label for="subject">Project Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Enter project name"
+          required
+        />
+
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          rows="4"
+          placeholder="Describe your project..."
+          required
+        ></textarea>
+
+        <label>User Types:</label>
+        <div class="user-types">
+          <label
+            ><input type="checkbox" name="user-types" value="Admin" />
+            Admin</label
+          >
+          <label
+            ><input type="checkbox" name="user-types" value="Student" />
+            Student</label
+          >
+          <label
+            ><input type="checkbox" name="user-types" value="Client" />
+            Client</label
+          >
+          <label
+            ><input type="checkbox" name="user-types" value="Guest" />
+            Guest</label
+          >
+        </div>
+
+        <label>Technology Used:</label>
+        <div class="tech-used">
+          <label
+            ><input type="checkbox" name="tech-used" value="HTML" /> HTML</label
+          >
+          <label
+            ><input type="checkbox" name="tech-used" value="CSS" /> CSS</label
+          >
+          <label
+            ><input type="checkbox" name="tech-used" value="JavaScript" />
+            JavaScript</label
+          >
+          <label
+            ><input type="checkbox" name="tech-used" value="React" />
+            React</label
+          >
+          <label
+            ><input type="checkbox" name="tech-used" value="Node.js" />
+            Node.js</label
+          >
+        </div>
+
+        <input type="submit" value="Submit Project" class="submit-btn" />
+      </form>
+    </div>
+
+    <div class="cards-container"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

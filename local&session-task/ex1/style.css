@@ -1,0 +1,79 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.personal-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.personal-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.personal-form input[type="text"],
+.personal-form input[type="number"],
+.personal-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.gender,
+.checklist {
+  margin-top: 5px;
+}
+
+.gender label,
+.checklist label {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #0059ff;
+}

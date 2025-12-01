@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="personal-form">
+        <h2>Personal Information</h2>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required />
+
+        <label>Gender:</label>
+        <div class="gender">
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </div>
+
+        <label for="desc">Brief Description:</label>
+        <textarea
+          id="desc"
+          rows="4"
+          placeholder="Write something about yourself..."
+        ></textarea>
+
+        <label for="major">Your Major & University:</label>
+        <input
+          type="text"
+          id="major"
+          placeholder="Example: Computer Science - MIT"
+          required
+        />
+
+        <label>Programming Languages You Prefer:</label>
+        <div class="checklist">
+          <label><input type="checkbox" value="JavaScript" /> JavaScript</label>
+          <label><input type="checkbox" value="Python" /> Python</label>
+          <label><input type="checkbox" value="Java" /> Java</label>
+          <label><input type="checkbox" value="C++" /> C++</label>
+          <label><input type="checkbox" value="PHP" /> PHP</label>
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn" />
+      </form>
+    </div>
+    <div class="cards-container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
